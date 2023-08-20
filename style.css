@@ -1,0 +1,79 @@
+
+
+
+:root{
+    --primary-card-bg: hsl(244, 38%, 16%);
+    --primaryMain-bg:hsl(233, 47%, 7%);
+    --primaryAccent:  hsl(277, 64%, 61%);
+
+    --neutral-white:  hsl(0, 0%, 100%);
+    --neutral-paragraph:  hsla(0, 0%, 100%, 0.75);
+    --neutral-heading: hsla(0, 0%, 100%, 0.6);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primaryMain-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.description h2{
+    color: var(--neutral-white);
+    margin-bottom: 1.2rem;
+}
+
+p {
+    color: var(--neutral-paragraph);
+}
+
+span {
+    color: var(--primaryAccent);
+}
+
+
+#wrapper{
+    text-align: center;
+    background-color:var(--primary-card-bg);
+}
+
+.description {
+    padding: 2rem;
+}
+
+.benefits{
+    margin-top: 2rem;
+}
+
+.benefits div{
+    margin-top: 2rem;
+    color: var(--neutral-white);
+}
+
+
+h3{
+    font-size: 1.5em;
+}
