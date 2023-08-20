@@ -1,5 +1,6 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
 :root{
     --primary-card-bg: hsl(244, 38%, 16%);
@@ -24,6 +25,8 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100dvh;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 main {
@@ -60,12 +63,13 @@ span {
     background-color:var(--primary-card-bg);
 }
 
-.description {
-    padding: 2rem;
+img{
+    max-width: 100%;
+    display: block;
 }
 
-.benefits{
-    margin-top: 2rem;
+.description {
+    padding: 2rem;
 }
 
 .benefits div{
@@ -73,7 +77,41 @@ span {
     color: var(--neutral-white);
 }
 
-
 h3{
     font-size: 1.5em;
+}
+
+@media screen and (min-width: 750px) {
+    body{
+        max-width: 760px;
+        margin: auto;
+    }
+
+    main {
+        padding: 0.6rem;
+    }
+
+    #wrapper{
+        display: flex;
+    }
+
+    .description{
+        padding: 2rem;
+    }
+
+    .benefits{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    picture, .description__container{
+        flex: 1;
+    }
+
+    picture {
+        order: 2;
+    }
+    
 }
