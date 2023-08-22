@@ -33,14 +33,12 @@ main{
     padding: 0.6rem;
 }
 
-#wrapper{
+.wrapper{
     background-color: var(--primary-card-bg);
+    border-radius: 20px;
 }
 
-picture {
-    background-color: var(--primaryAccent);
-    mix-blend-mode:lighten ;
-}
+
 
 img{
     max-width: 100%;
@@ -65,8 +63,16 @@ p{
 }
 
 .description >  p {
-    margin-top: 1rem;
+    margin: 1.5rem 0;
 }
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+}
+
 
 @media screen and (min-width: 680px) {
 
@@ -74,7 +80,7 @@ p{
         margin: auto;
     }
     
-    #wrapper{
+    .wrapper{
         display: flex;
         align-items: center;
     }
@@ -83,15 +89,14 @@ p{
         padding: 1rem 1.5rem;
     }
     .benefits{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 1rem;
+        flex-direction: row;
     }
 
-    picture {
+    .images {
         order: 2;
     }
-    picture, .description{
+    
+    .images, .description{
         flex: 1;
     }
     
