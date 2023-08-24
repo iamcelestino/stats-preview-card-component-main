@@ -35,15 +35,21 @@ main{
 
 .wrapper{
     background-color: var(--primary-card-bg);
-    border-radius: 20px;
+    border-radius: 8px;
+
+}
+
+.images {
+    background-color: var(--primaryAccent);
+    border-radius: 8px;
 }
 
 img{
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: multiply;
     max-width: 100%;
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 span{
@@ -88,7 +94,7 @@ p{
 
     img{
         border-top-left-radius: 0;
-        border-bottom-right-radius: 10px;
+        border-bottom-right-radius: 5px;
     }
 
     .description {
